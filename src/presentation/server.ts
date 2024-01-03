@@ -24,6 +24,8 @@ export class Server{
     async start(){
 
         //*Middlewares
+        this.app.use(express.json());//<-- para parsear el post|crear|row-json
+        this.app.use(express.urlencoded({extended:true}));//<-- x-www-form-urlencoded
 
         //*Public folder
         // this.app.use(express.static('public'));  //<-- apuntamos a nuestro html
