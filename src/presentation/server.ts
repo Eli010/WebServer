@@ -39,7 +39,7 @@ export class Server{
         // console.log('Server running');
         // this.app.listen(3000,()=>{
         this.app.listen(this.port,()=>{
-            console.log(`Server running on por ${3000}`);
+            console.log(`Server running on port ${3000}`);
             
         })
     }
